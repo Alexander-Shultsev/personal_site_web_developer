@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport">
+    <title>Александр Шульцев</title>
+    <link rel="stylesheet" href="assets/style/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <aside class="menu">
+        <span class="menu__logo center">as</span>
+        <div class="menu__container center">
+            <nav class="menu__nav">
+                <a id="about_me" data-scroll="#about_me_s" class="active" href="#">Обо мне</a>
+                <a id="projects" data-scroll="#projectsHeight" href="#">Проекты</a>
+                <a id="order" data-scroll="#order_s" href="#">Заказать</a>
+            </nav>
+        </div>
+    </aside>
+
+
+    <main>
+        <section class="aboutMe" id="about_me_s">
+            <div class="container">
+                <div class="aboutMe__all">
+                    <article class="aboutMe__info">
+                        <h1 class="aboutMe__Alexander">Александр Шульцев</h1>
+
+                        <div class="aboutMe__webDeveloper">
+                            <span></span>
+                            <h2>Разработчик сайтов</h2>
+                        </div>
+
+                        <p>Занимаюсь созданием сайтов с апреля 2019</p>
+                        <p>года. Разрабатываю сайты на заказ</p>
+
+                        <span class="aboutMe__status">На данный момент заказов нет</span>
+                    </article>
+                    <img class="aboutMe__photo" src="assets/img/My_photo.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects" id="projectsHeight">
+            <div class="container">
+                <div class="projects__all">
+                   <a class="projects__item projects__item--9901" href="https://9901.ga" target="_blank">
+                       <p class="projects__name projects__name--9901">Сайт группы 9901 <br> Политехнического колледжа НовГУ</p>
+
+                       <div class="projects__add">
+                           <span>Адаптирован под мобильные устройства</span>
+                       </div>
+
+                       <img src="assets/img/Site_2.jpg" alt="Журнал PRO">
+
+                       <div class="projects__hover projects__hover--9901 center">
+                           <p>посмотреть</p>
+                       </div>
+                   </a>
+
+                   <a class="projects__item projects__item--journalPro" href="assets/projects/Lending_journal_PRO/index.html" target="_blank">
+                       <p class="projects__name projects__name--journalPro">Рекламный сайт <br> для проекта Журнал PRO</p>
+
+                       <div class="projects__add"></div>
+
+                       <img src="assets/img/Site_1.jpg" alt="Журнал PRO">
+
+                       <div class="projects__hover projects__hover--journalPro center">
+                           <p>посмотреть</p>
+                       </div>
+                   </a>
+
+                   <a class="projects__item projects__item--activeBox" href="assets/projects/Active_Box/index.html" target="_blank">
+                       <p class="projects__name projects__name--activeBox">Сайт компании <br> Active BOX</p>
+
+                       <div class="projects__add"></div>
+
+                       <img src="assets/img/Site_3.jpg" alt="Журнал PRO">
+
+                       <div class="projects__hover projects__hover--activeBox center">
+                           <p>посмотреть</p>
+                       </div>
+                   </a>
+
+                   <a class="projects__item projects__item--yourSite" href="#">
+                       <span>
+                           <p class="projects__name projects__name--yourSite">Здесь может быть <br> ваш сайт</p>
+                       </span>
+                   </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="question" id="order_s">
+            <div class="container">
+                <article class="typeSite">
+                    <h3 class="header">Какие сайты можно заказать?</h3>
+                    <div class="typeSite__blocks container__typeSite">
+                        <div class="typeSite__item">
+                            <p class="typeSite__title">Промо-сайт</p>
+                            <p class="typeSite__subtitle">используются для быстрой раскрутки какой-либо рекламной акции компании, а также для быстрого продвижения услуг, товаров и брендов.</p>
+                        </div>
+
+                        <div class="typeSite__item">
+                            <p class="typeSite__title">Сайт-визитка</p>
+                            <p class="typeSite__subtitle">состоит из небольшого числа страниц (не более десятка), где содержится общая информация о проекте: область деятельности компании, ее реквизиты и контакты,а также общая информация (история, интересные факты и т.п.). Подобный веб-ресурс представляет собой расширенную визитную карточку организации или предпринимателя. Кроме того, стоит он недорого и практически не нуждается в поддержке.</p>
+                        </div>
+
+                        <div class="typeSite__item">
+                            <p class="typeSite__title">Персональный<span>i</span>сайт</p>
+                            <p class="typeSite__subtitle">это страница, на которой человек размещает информацию о себе, фотогалерею и какую-либо еще информацию по своему усмотрению, что является великолепной возможностью заявить о своих талантах.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="howMuch">
+                    <div class="howMuch__info">
+                        <h3 class="header">Сколько это стоит?</h3>
+                        <p class="howMuch__cost">бесплатно</p>
+                    </div>
+                    <div class="money">
+                        <div class="coin coin--even center" id="coin_1">
+                            <p>$</p>
+                        </div>
+                        <div class="coin__margin">
+                            <div class="coin coin--uneven center" id="coin_2">
+                                <p>$</p>
+                            </div>
+                        </div>
+                        <div class="coin__margin">
+                            <div class="coin coin--even center" id="coin_3">
+                                <p>$</p>
+                            </div>
+                        </div>
+                        <div class="coin__margin">
+                            <div class="coin coin--uneven center" id="coin_4">
+                                <p>$</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="howOrder">
+            <div class="container">
+                <h3 class="header">Как отправить заявку?</h3>
+                <p class="howOrder__subtitle">Для этого достаточно написать личное сообщение <br> в любой из мессенджеров</p>
+                <div class="messenger">
+                    <a class="messenger__item messenger__item--vk center" href="https://vk.com/alexandershultsev" target="_blank">
+                        <p class="messenger__name">ВКонтакте</p>
+                        <p class="messenger__write messenger__write--vk">Написать</p>
+                    </a>
+                    <a class="messenger__item messenger__item--telegram center" href="https://t.me/AlexanderShultsev" target="_blank">
+                        <p class="messenger__name">Telegram</p>
+                        <p class="messenger__write messenger__write--telegram">Написать</p>
+                    </a>
+                    <a class="messenger__item messenger__item--whatsApp center" href="http://wa.me/+79643121685" target="_blank">
+                        <p class="messenger__name">WhatsApp</p>
+                        <p class="messenger__write messenger__write--whatsApp">Написать</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="assets/script/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

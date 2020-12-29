@@ -1,0 +1,10 @@
+:root {
+    --c_main: #235be9;
+    --c_red: #E84545;
+    --w_aside: 100px;
+    --border: .5px solid rgba(0,0,0,.2);
+
+    --c_vk: #2787F5;
+    --c_telegram: #2DA5E1;
+    --c_whatsApp: #40EA60;
+}

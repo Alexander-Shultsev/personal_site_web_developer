@@ -699,7 +699,7 @@ main {
 
     .container {
         max-width: none;
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     .aboutMe {
@@ -708,11 +708,11 @@ main {
     }
 
     .aboutMe__Alexander {
-         font-size: 70px;
+         font-size: 50px;
     }
 
     .aboutMe__webDeveloper > h2 {
-        font-size: 32px;
+        font-size: 27px;
     }
 
     .aboutMe__info > p {

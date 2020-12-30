@@ -644,6 +644,15 @@ main {
     .aboutMe__info > p {
         padding-right: 30%;
     }
+
+    /* Projects */
+    .projects__item {
+        grid-template-rows: 110px 70px 1fr;
+    }
+
+    .projects__item > img {
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -654,6 +663,23 @@ main {
 
     .aboutMe__photo {
         width: 50%;
+    }
+
+    /* Projects */
+    .projects__all {
+        grid-template-columns: 1fr;
+    }
+
+    .projects__item {
+        grid-template-rows: 90px 70px 1fr;
+    }
+
+    .projects__item > img {
+        height: 330px;
+    }
+
+    .projects__item--yourSite {
+        height: 500px;
     }
 
 }
@@ -676,6 +702,15 @@ main {
         max-width: 600px;
     }
 
+    /* Projects */
+    .projects__item > img {
+        height: 280px;
+    }
+
+    .projects__item--yourSite {
+        height: 450px;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -683,14 +718,6 @@ main {
     .container {
         max-width: 100%;
         padding: 0 50px;
-    }
-
-}
-
-@media screen and (max-width: 650px) {
-
-    .aboutMe__info > p {
-        padding-right: 0;
     }
 
 }
@@ -717,6 +744,7 @@ main {
 
     .aboutMe__info > p {
         font-size: 24px;
+        padding-right: 0;
     }
 
     .aboutMe__status {
@@ -726,6 +754,27 @@ main {
 
     .photo__section {
         margin: 50px 0;
+    }
+
+    .projects .container {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    /* Projects */
+    .projects__item {
+        grid-template-rows: 100px 70px 1fr;
+    }
+
+    .projects__name {
+        font-size: 20px;
+    }
+
+    .projects__item > img {
+        height: 250px;
     }
 
 }
@@ -743,6 +792,15 @@ main {
 
     .aboutMe__Alexander {
          margin-bottom: 20px;
+    }
+
+    /* Projects */
+    .projects__item > img {
+        height: 180px;
+    }
+
+    .projects__item--yourSite {
+        height: 400px;
     }
 
 }

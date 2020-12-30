@@ -712,19 +712,19 @@ main {
     }
 
     .aboutMe__webDeveloper > h2 {
-        font-size: 27px;
+        font-size: 20px;
     }
 
     .aboutMe__info > p {
-        font-size: 30px;
-    }
-
-    .aboutMe__status {
         font-size: 24px;
     }
 
+    .aboutMe__status {
+        font-size: 20px;
+    }
+
     .photo__section {
-        margin: 90px 0;
+        margin: 50px 0;
     }
 }
 

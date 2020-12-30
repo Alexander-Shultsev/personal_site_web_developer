@@ -139,7 +139,7 @@ main {
 .aboutMe__info {
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 
 .aboutMe__Alexander {
@@ -176,8 +176,13 @@ main {
     letter-spacing: 2px;
 }
 
+.photo__section {
+    margin-bottom: 0;
+    width: 60%;
+}
+
 .aboutMe__photo {
-    width: 50%;
+    width: 100%;
 }
 
 .aboutMe__status {
@@ -602,13 +607,15 @@ main {
 /* Media =====================================*/
 
 @media screen and (max-width: 1550px) {
+
     .container {
-        max-width: 1000px;
+        max-width: 1100px;
     }
 
-    .projects__item > img {
-        height: 230px;
+    .aboutMe__Alexander {
+        font-size: 50px;
     }
+
 }
 
 @media screen and (max-width: 1350px) {
@@ -617,26 +624,41 @@ main {
         max-width: 900px;
     }
 
-    .projects__all {
-        grid-template-columns: 1fr;
-
-        grid-gap: 30px;
+    .aboutMe__all {
+        flex-direction: column-reverse;
     }
 
-    .projects__item > img {
-        height: 450px;
+    .aboutMe__Alexander {
+        font-size: 50px;
     }
 
-    .projects__item--yourSite {
-        height: 600px;
+    .photo__section {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    .aboutMe__photo {
+        width: 40%;
+    }
+
+    .aboutMe__info > p {
+        padding-right: 30%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .container {
+        max-width: 700px;
+    }
+
+    .aboutMe__photo {
+        width: 50%;
     }
 
 }
 
-@media screen and (max-width: 1040px) {
-    .container {
-        max-width: 700px;
-    }
+@media screen and (max-width: 1000px) {
 
     .menu {
         display: none;
@@ -646,54 +668,65 @@ main {
         padding-left: 0;
     }
 
-    .projects__item > img {
-        height: 350px;
-    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
+
+    .container {
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
 
     .container {
         max-width: none;
-        padding: 0 30px;
+        padding: 0 50px;
     }
 
-    .projects__item > img {
-        height: 230px;
-    }
-
-    .projects__item--yourSite {
-        height: 400px;
-    }
 }
 
-@media screen and (max-width: 600px) {
-    .projects__item > img {
-        height: 230px;
+@media screen and (max-width: 650px) {
+
+    .container {
+        max-width: none;
+        padding: 0 50px;
     }
+
+    .aboutMe__info > p {
+        padding-right: 0;
+    }
+
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
 
-    .projects__item > img {
-        height: 230px;
+    .container {
+        max-width: none;
+        padding: 0 40px;
     }
 
-    .projects__item {
-        grid-template-rows: 115px 70px 1fr;
+    .aboutMe__Alexander {
+         font-size: 70px;
+    }
+
+    .aboutMe__webDeveloper > h2 {
+        font-size: 32px;
+    }
+
+    .aboutMe__info > p {
+        font-size: 30px;
+    }
+
+    .aboutMe__status {
+        font-size: 24px;
+    }
+
+    .photo__section {
+        margin: 90px 0;
     }
 }
-
-@media screen and (max-width: 500px) {
-    .projects__name {
-        font-size: 20px;
-    }
-
-    .projects__add > span {
-        font-size: 14px;
-    }
-}
-
 
 
 

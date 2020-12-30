@@ -681,18 +681,13 @@ main {
 @media screen and (max-width: 750px) {
 
     .container {
-        max-width: none;
+        max-width: 100%;
         padding: 0 50px;
     }
 
 }
 
 @media screen and (max-width: 650px) {
-
-    .container {
-        max-width: none;
-        padding: 0 50px;
-    }
 
     .aboutMe__info > p {
         padding-right: 0;
@@ -705,6 +700,11 @@ main {
     .container {
         max-width: none;
         padding: 0 40px;
+    }
+
+    .aboutMe {
+        height: auto;
+        padding-bottom: 60px;
     }
 
     .aboutMe__Alexander {

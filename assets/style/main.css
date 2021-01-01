@@ -314,7 +314,7 @@ main {
     letter-spacing: 1px;
 }
 
-.projects__item > img {
+.projects__img {
     width: 100%;
     height: 300px;
     object-fit: cover;

@@ -4,6 +4,11 @@ body{
     font-family: 'Montserrat', sans-serif
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+}
+
 .header{
     width: 100%;
     height: 650px;
@@ -181,4 +186,61 @@ p{
     padding:30px;
     float: left;
 }
+
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    width: 431px;
+    height: 95px;
+    border-radius: 12px;
+
+    background: rgba(32, 98, 226, 0.1);
+    font-weight: 600;
+    font-size: 25px;
+    color: #2062E2;
+
+    transition: .2s;
+}
+
+.order:hover {
+    width: 500px;
+    background: #2062E2;
+    color: #fff;;
+}
+
+/* in Developing
+===============================*/
+
+.inDeveloping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    background: rgba(32, 98, 226, 0.1);
+}
+
+.inDeveloping__title {
+    color: #2062E2;
+    margin: 0;
+    margin-bottom: 3%;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .inDeveloping__title {
+        margin-bottom: 4%;
+    }
+}
+
+
+
+
+
+
 

@@ -710,6 +710,8 @@ main {
         max-width: 700px;
     }
 
+
+    /* About me */
     .aboutMe__photo {
         width: 50%;
     }
@@ -816,7 +818,30 @@ main {
     }
 }
 
+@media screen and (max-width: 575px) {
+
+    /* About me */
+    .aboutMe__Alexander {
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width: 550px) {
+
+    /* About me */
+    .aboutMe__Alexander {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .aboutMe__webDeveloper > h2 {
+        font-size: 16px;
+    }
+
+    .aboutMe__info > p {
+        font-size: 16px;
+        padding: 0;
+    }
 
     /* Projects */
     .projects__item {
@@ -834,17 +859,10 @@ main {
 
 @media screen and (max-width: 450px) {
 
-    .aboutMe__info > p {
-        font-size: 18px;
-    }
 
     .aboutMe__status {
-        font-size: 14px;
-        width: 100%;
-    }
-
-    .aboutMe__Alexander {
-        margin-bottom: 20px;
+        font-size: 16px;
+        width: 341px;
     }
 
     /* Projects */
@@ -922,6 +940,18 @@ main {
 
     .howOrder__subtitle {
         font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* About me */
+    .aboutMe__Alexander {
+        font-size: 42px;
+    }
+
+    .aboutMe__status {
+        width: 100%;
     }
 }
 

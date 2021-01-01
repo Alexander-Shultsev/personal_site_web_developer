@@ -368,16 +368,16 @@ main {
     color: var(--c_red);
 }
 
-/* Question =====================================*/
-
-.question {
-    padding-top: 200px;
-}
+/* Type Site =====================================*/
 
 .header {
     color: var(--c_main);
     font-size: 32px;
     font-weight: 500;
+}
+
+.typeSite {
+    padding-top: 200px;
 }
 
 .typeSite__blocks {
@@ -451,10 +451,12 @@ main {
 /* How much =====================================*/
 
 .howMuch {
+    padding: 200px 0;
+}
+
+.howMuch__flex {
     display: flex;
     justify-content: space-between;
-
-    padding: 200px 0;
 }
 
 .howMuch__cost {
@@ -523,7 +525,7 @@ main {
 }
 
 
-/* How send =====================================*/
+/* How order =====================================*/
 
 .howOrder {
     padding: 200px 0;
@@ -658,6 +660,7 @@ main {
 
     .typeSite__item {
         width: 100%;
+        padding: 42px;
     }
 
     .typeSite__item:hover {
@@ -672,6 +675,20 @@ main {
     .typeSite__item:nth-child(2) {
         border: var(--border);
         border-bottom: none;
+    }
+
+    .typeSite__title {
+        top: 42px; left: 42px;
+        transform: translate(0, 0);
+    }
+
+    .typeSite__item:hover .typeSite__title {
+        top: 42px; left: 42px;
+        transform: translate(0, 0);
+    }
+
+    .typeSite__subtitle {
+        opacity: 1;
     }
 
 
@@ -709,6 +726,11 @@ main {
         height: 500px;
     }
 
+    .messenger {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -737,7 +759,6 @@ main {
     .projects__item--yourSite {
         height: 450px;
     }
-
 }
 
 @media screen and (max-width: 750px) {
@@ -747,7 +768,6 @@ main {
         padding: 0 50px;
         margin: 0;
     }
-
 }
 
 @media screen and (max-width: 650px) {
@@ -765,7 +785,7 @@ main {
     }
 
     .aboutMe__Alexander {
-         font-size: 50px;
+        font-size: 50px;
     }
 
     .aboutMe__webDeveloper > h2 {
@@ -793,7 +813,6 @@ main {
     .typeSite__item {
         height: auto;
     }
-
 }
 
 @media screen and (max-width: 550px) {
@@ -810,7 +829,6 @@ main {
     .projects__item > img {
         height: 250px;
     }
-
 }
 
 @media screen and (max-width: 450px) {
@@ -879,22 +897,21 @@ main {
 
     .typeSite__title {
         top: var(--p_container); left: var(--p_container);
-        transform: translate(0, 0);
     }
 
     .typeSite__item:hover .typeSite__title {
         top: var(--p_container); left: var(--p_container);
-        transform: translate(0, 0);
-    }
-
-    .typeSite__subtitle {
-        opacity: 1;
     }
 
     /* How Much */
     .howMuch__cost {
         letter-spacing: 5px;
         font-size: 38px;
+    }
+
+    /* How Much */
+    .howOrder__subtitle {
+        font-size: 22px;
     }
 }
 
@@ -904,6 +921,12 @@ main {
     .howMuch__cost {
         letter-spacing: 4px;
         font-size: 34px;
+    }
+
+    /* How Much */
+    .howOrder__subtitle {
+        font-size: 20px;
+        margin: 25px 0 50px;
     }
 }
 

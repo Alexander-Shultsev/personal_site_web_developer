@@ -621,6 +621,11 @@ main {
         max-width: 900px;
     }
 
+    .aboutMe {
+        padding: 100px 0;
+        height: auto;
+    }
+
     .aboutMe__all {
         flex-direction: column-reverse;
     }
@@ -780,7 +785,7 @@ main {
     }
 
     .aboutMe {
-        height: auto;
+        padding: 0;
         padding-bottom: 60px;
     }
 
@@ -790,11 +795,7 @@ main {
 
     .aboutMe__webDeveloper > h2 {
         font-size: 20px;
-    }
-
-    .aboutMe__info > p {
-        font-size: 24px;
-        padding-right: 0;
+        letter-spacing: 3px;
     }
 
     .aboutMe__status {
@@ -855,8 +856,9 @@ main {
         height: 400px;
     }
 
-    /* Question */
-    .question {
+    /* typeSite */
+
+    .typeSite {
         padding-top: 100px;
     }
 
@@ -904,12 +906,20 @@ main {
     }
 
     /* How Much */
+    .howMuch {
+        padding: 100px 0;
+    }
+
     .howMuch__cost {
         letter-spacing: 5px;
         font-size: 38px;
     }
 
-    /* How Much */
+    /* How Order */
+    .howOrder {
+        padding: 100px 0;
+    }
+
     .howOrder__subtitle {
         font-size: 22px;
     }

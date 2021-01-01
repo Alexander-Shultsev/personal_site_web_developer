@@ -747,8 +747,10 @@ main {
 @media screen and (max-width: 650px) {
 
     .container {
+        --p_container: 30px;
+
         max-width: 100%;
-        padding: 0 30px;
+        padding: 0 var(--p_container);
     }
 
     .aboutMe {
@@ -817,7 +819,7 @@ main {
     }
 
     .aboutMe__Alexander {
-         margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     /* Projects */
@@ -837,6 +839,43 @@ main {
     .header {
         font-size: 26px;
     }
+
+    .typeSite__title {
+        top: var(--p_container); left: var(--p_container);
+        transform: translate(0, 0);
+    }
+
+    .typeSite__subtitle {
+        opacity: 1;
+    }
+
+    .typeSite__item {
+        padding: var(--p_container);
+    }
+
+    .typeSite__item:first-child {
+        border-right: none;
+        border-left: none;
+    }
+
+    .typeSite__item:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
+
+    .typeSite__item:last-child {
+        border-right: none;
+        border-left: none;
+    }
+
+    .question > .container {
+        padding: 0;
+    }
+
+    .header {
+        margin: 0 var(--p_container);
+    }
+
 
 }
 

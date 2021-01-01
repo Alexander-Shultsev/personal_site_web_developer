@@ -830,16 +830,16 @@ main {
 
     /* About me */
     .aboutMe__Alexander {
-        font-size: 32px;
+        font-size: 36px;
         margin-bottom: 18px;
     }
 
     .aboutMe__webDeveloper > h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .aboutMe__info > p {
-        font-size: 16px;
+        font-size: 18px;
         padding: 0;
     }
 
@@ -854,6 +854,10 @@ main {
 
     .projects__item > img {
         height: 250px;
+    }
+
+    .projects__name--yourSite::before {
+        top: -80%;
     }
 }
 
@@ -872,6 +876,12 @@ main {
 
     .projects__item--yourSite {
         height: 400px;
+    }
+
+    .projects__name--yourSite::before {
+        top: -58%;
+        width: 120px;
+        height: 100px;
     }
 
     /* typeSite */
@@ -956,6 +966,21 @@ main {
 }
 
 @media screen and (max-width: 375px) {
+
+    /* About me */
+    .aboutMe__webDeveloper > h2 {
+        font-size: 17px;
+        color: rgba(0,0,0,.4);
+    }
+
+    /* Projects */
+    .projects__name--yourSite {
+        color: #ad892e;
+    }
+
+    .projects__name--yourSite::before {
+        display: none;
+    }
 
     /* How Much */
     .howMuch__cost {

@@ -18,7 +18,7 @@ body{
     height:450px;
     position: relative;
     z-index: 1;
-    top: -320px;
+/*    top: -320px;*/
     display: block;
     margin: 0 auto ;
 
@@ -40,15 +40,52 @@ h2{
     text-align: center;
     color: #FFFFFF;
 }
+
 .progress{
     position: relative;
     z-index: 1;
     top: 0px;
     display: block;
     margin: 0 auto ;
+    width: 65%;
+    margin-top: -300px;
 }
+
 .square{
     position: absolute;
+}
+
+.main {
+    margin-top: 300px;
+}
+
+@media screen and (max-width: 1600px) {
+    .main {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .progress{
+        width: 75%;
+    }
+
+    .main {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        margin-top: -30px;
+    }
 }
 
 

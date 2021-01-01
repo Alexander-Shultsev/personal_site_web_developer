@@ -238,6 +238,10 @@ main {
     background: #FDF8EC;
 }
 
+.projects__item--yourSite {
+    cursor: default;
+}
+
 .projects__name {
     position: inherit;
     margin: 15px 0 70px;
@@ -246,7 +250,6 @@ main {
     font-weight: 500;
 
     z-index: 1;
-
     transition: .4s;
 }
 
@@ -256,34 +259,6 @@ main {
 
 .projects__name--journalPro {
     color: #2062E2;
-}
-
-.projects__name--9901 {
-    color: #fff;
-    margin: 0;
-    margin-top: 15px;
-}
-
-.projects__item--yourSite {
-    cursor: default;
-}
-
-.projects__item--yourSite:hover .projects__name {
-    color: #000;
-}
-
-.projects__add > span {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-
-    padding: 6px 15px;
-    background: var(--c_main);
-
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 1px;
 }
 
 .projects__name--activeBox {
@@ -309,7 +284,30 @@ main {
     width: 140px;
     height: 122px;
     background: #E8BA45;
+}
 
+.projects__name--9901 {
+    color: #fff;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.projects__item--yourSite:hover .projects__name {
+    color: #000;
+}
+
+.projects__add > span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    padding: 6px 15px;
+    background: var(--c_main);
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .projects__item > img {
@@ -525,14 +523,14 @@ main {
 }
 
 
-/* How order =====================================*/
+/* How send =====================================*/
 
-.howOrder {
+.howSend {
     padding: 200px 0;
     background: #F4F7FE;
 }
 
-.howOrder__subtitle {
+.howSend__subtitle {
     margin: 35px 0 65px;
     font-size: 24px;
     font-weight: 500;
@@ -612,7 +610,6 @@ main {
     .aboutMe__Alexander {
         font-size: 50px;
     }
-
 }
 
 @media screen and (max-width: 1350px) {
@@ -657,6 +654,17 @@ main {
         height: 250px;
     }
 
+    .projects__item:hover .projects__name--journalPro {
+        color: #2062E2;
+    }
+
+    .projects__item:hover .projects__name--activeBox {
+        color: #E84545;
+    }
+
+    .projects__item:hover .projects__hover {
+        opacity: 0;
+    }
 
     /* Question */
     .typeSite__blocks {
@@ -696,12 +704,31 @@ main {
         opacity: 1;
     }
 
-
     /* How much */
     .money {
         display: none;
     }
 
+    /* How send */
+    .messenger__item--vk:hover {
+        background: var(--c_vk);
+    }
+
+    .messenger__item--telegram:hover {
+        background: var(--c_telegram);
+    }
+
+    .messenger__item--whatsApp:hover {
+        background: var(--c_whatsApp);
+    }
+
+    .messenger__item:hover .messenger__name {
+        display: block;
+    }
+
+    .messenger__item:hover .messenger__write {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -709,7 +736,6 @@ main {
     .container {
         max-width: 700px;
     }
-
 
     /* About me */
     .aboutMe__photo {
@@ -737,7 +763,6 @@ main {
         grid-template-columns: 1fr;
         grid-gap: 30px;
     }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -749,7 +774,6 @@ main {
     main {
         padding-left: 0;
     }
-
 }
 
 @media screen and (max-width: 850px) {
@@ -943,12 +967,12 @@ main {
         font-size: 38px;
     }
 
-    /* How Order */
-    .howOrder {
+    /* How send */
+    .howSend {
         padding: 100px 0;
     }
 
-    .howOrder__subtitle {
+    .howSend__subtitle {
         font-size: 22px;
     }
 }
@@ -973,6 +997,10 @@ main {
         color: rgba(0,0,0,.4);
     }
 
+    .aboutMe__info > p {
+        font-size: 16px;
+    }
+
     /* Projects */
     .projects__name--yourSite {
         color: #ad892e;
@@ -988,8 +1016,8 @@ main {
         font-size: 34px;
     }
 
-    /* How Much */
-    .howOrder__subtitle {
+    /* How send */
+    .howSend__subtitle {
         font-size: 20px;
         margin: 25px 0 50px;
     }

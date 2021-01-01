@@ -47,6 +47,9 @@ button {
     justify-content: center;
 }
 
+.main__title {
+    display: none;
+}
 
 /* Navidation =============================================*/
 
@@ -775,6 +778,18 @@ main {
     main {
         padding-left: 0;
     }
+
+    .main__title {
+        display: block;
+
+        margin-bottom: 50px;
+
+        font-family: "Montserrat", sans-serif;
+        font-size: 50px;
+        letter-spacing: ;
+        font-weight: 700;
+        color: rgba(0,0,0,.6);
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -810,6 +825,11 @@ main {
         max-width: 100%;
         padding: 0 var(--p_container);
     }
+
+    .projects .main__title {
+        padding: 0 var(--p_container);
+    }
+
 
     .aboutMe {
         padding: 0;
@@ -888,6 +908,14 @@ main {
 
 @media screen and (max-width: 450px) {
 
+
+    .main__title {
+        font-size: 40px;
+    }
+
+    .typeSite .main__title {
+        padding: 0 var(--p_container);
+    }
 
     .aboutMe__status {
         font-size: 16px;

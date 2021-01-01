@@ -1,0 +1,569 @@
+:root {
+    --bgc_one: rgba(255,255,255,.07);
+    --bgc_two: rgba(255,255,255,.15);
+    --c_main: #569BF9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171717;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .07em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 564px;
+}
+
+.container_2 {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.block__margin {
+    margin: 0 8px;
+}
+
+.none {
+    display: block;
+}
+
+
+/* Header
+=======================*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 44px 52px 0;
+
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo__icon {
+    margin-right: 24px;
+
+    width: 40px;
+    height: 44px;
+    fill: #569BF9;
+}
+
+.logo h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255,255,255,.7);
+    letter-spacing: .15em;
+}
+
+
+/* Main
+=======================*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading
+=======================*/
+
+.heading {
+    display: flex;
+    justify-content: center;
+
+    margin: 26px 0;
+
+    font-weight: 600;
+    font-size: 36px;
+}
+
+
+/* Timetable
+=======================*/
+
+.timetable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.timetable__day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 7px;
+
+    width: 172px;
+    height: 64px;
+    background: var(--bgc_one);
+    border-radius: 9px;
+
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.timetable__day:hover {
+    box-shadow: 0 0 30px rgb(86, 155, 249);
+    background: var(--c_main);
+}
+
+.timetable__all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 8px auto 0;
+
+    width: 100%;
+    height: 44px;
+    border-radius: 7px;
+    background: var(--bgc_one);
+
+    font-weight: 600;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.timetable__all:hover {
+    margin: 8px auto 0;
+
+    box-shadow: 0 0 30px rgb(86, 155, 249);
+    background: var(--c_main);
+}
+
+
+/* Additional buttons
+=======================*/
+
+.additionallys {
+    display: flex;
+    margin: 0 auto;
+}
+
+.additionally {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    margin: 40px 8px;
+
+    height: 98px;
+    width: 200px;
+    text-align: center;
+    background: var(--bgc_two);
+    border-radius: 7px;
+
+    transition: .2s;
+    cursor: pointer;
+}
+
+.additionally:hover .additionally__color {
+    position: absolute;
+    top: 0; right: 0;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    opacity: 1;
+}
+
+.additionally p {
+    z-index: 1;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.additionally__color {
+    position: absolute;
+    top: 8px; right: 8px;
+
+    width: 10px;
+    height: 10px;
+    background: #F95656;
+    opacity: 0;
+
+    transition: .2s;
+}
+
+
+/* Disciplines
+=======================*/
+
+.disciplines {
+    margin: 0 8px;
+}
+
+.title {
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 30px 0 16px 0;
+
+    height: 30px;
+}
+
+.title_height {
+    height: 50px;
+}
+
+.title p {
+    color: var(--c_main);
+    font-weight: 800;
+    font-size: 20px;
+
+    width: 400px;
+}
+
+/*
+.disciplines__grade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 108px;
+    height: 28px;
+    border-radius: 14px;
+    color: #333333;
+    background: rgb(255, 255, 255,.01);
+
+    font-weight: 700;
+    font-size: 16px;
+
+    transition: .2s;
+}
+
+.disciplines__grade:hover {
+    background: #F95656;
+    color: #fff;
+}
+*/
+
+.disciplines__links {
+
+}
+
+.disciplines__links-one {
+    display: flex;
+    align-items: center;
+
+    padding: 13px 18px;
+    margin-bottom: 10px;
+
+    width: 100%;
+    background: var(--bgc_one);
+    border-radius: 7px;
+    line-height: 1.3;
+
+    transition: .2s;
+}
+
+.disciplines__links-one:hover {
+    background: rgba(255,255,255,.15);
+/*    margin-left: 10px;*/
+}
+
+
+/* Footer
+=======================*/
+
+.footer {
+    height: 200px;
+    width: auto;
+}
+
+.dowload__style {
+    margin-left: 18px;
+    color: rgba(255,255,255,.5);
+}
+
+
+/* Group photo
+=======================*/
+
+.photos_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.photos_grid img {
+    width: 100%;
+
+    transition: .3s;
+}
+
+.photos_grid img:hover {
+    transform: scale(1.3);
+}
+
+/* Media
+============================================================================
+============================================================================*/
+@media (max-width: 1300px) {
+
+    .container_2 {
+        margin: 0 52px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .photos_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .container {
+        padding: 0 20px;
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .block__margin {
+        margin: 0;
+    }
+
+/* Header
+=======================*/
+
+    header {
+        align-items: center;
+
+        margin-bottom: 10px;
+        padding: 0;
+
+        width: 100%;
+        height: 60px;
+        background: rgba(255,255,255,.05);
+    }
+
+    .logo__icon {
+        margin: 0 20px;
+
+        width: 30px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    header > nav {
+        height: 100%;
+    }
+
+    header > nav > a {
+        display: flex;
+        align-items: center;
+
+        padding: 0 30px;
+
+        height: 100%;
+        border-radius: 0;
+        background: rgb(255,255,255,.05);
+    }
+
+    header > nav > a:hover::after {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+    .none {
+        display: none;
+    }
+
+
+/* Heading
+=======================*/
+
+    .heading {
+        font-size: 34px;
+    }
+
+
+/* Timetable
+=======================*/
+
+    .timetable {
+        justify-content: space-between;
+    }
+
+    .timetable__day {
+        margin: 7px 0;
+
+        width: 47%;
+    }
+
+    .timetable__day:hover {
+        box-shadow: none;
+        background: rgba(255,255,255,.05);
+    }
+
+    .timetable__all {
+        margin-top: 20px;
+
+        height: 50px;
+        background: var(--c_main);
+    }
+
+    .timetable__all:hover {
+        box-shadow: none;
+        background: var(--c_main);
+
+        margin-top: 20px;
+    }
+
+
+/* Additional buttons
+=======================*/
+
+    .additionallys {
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .additionally {
+        margin: 8px 0;
+
+        width: 100%;
+    }
+
+    .additionally:hover .additionally__color{
+        display: none;
+    }
+
+    .additionally__color {
+        display: none;
+    }
+
+
+/* Heading grade
+=======================*/
+
+    .heading_grade-all {
+        background: #f95858;
+        color: #fff;
+    }
+
+    .heading_grade-all:hover {
+        width: 100%;
+        background: #f95858;
+        box-shadow: none;
+        color: #fff;
+    }
+
+
+/* Disciplines
+=======================*/
+
+    .disciplines {
+        margin: 0;
+    }
+
+    .title {
+        margin: 40px 0 16px 0;
+    }
+
+    .title_height {
+        height: 66px;
+    }
+
+    .disciplines__links-one {
+        padding: 13px 18px;
+        margin-bottom: 16px;
+
+        width: 100%;
+    }
+
+    .disciplines__links-one:hover {
+        background: rgba(255,255,255,.05);
+    }
+
+
+/* Photos grid
+=======================*/
+
+    .photos_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container_2 {
+        margin: 0 20px;
+    }
+
+
+/* Footer
+=======================*/
+
+    .footer {
+        height: 100px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -374,10 +374,6 @@ main {
     padding-top: 200px;
 }
 
-.typeSite {
-    margin-bottom: 200px;
-}
-
 .header {
     color: var(--c_main);
     font-size: 32px;
@@ -457,7 +453,8 @@ main {
 .howMuch {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+
+    padding: 200px 0;
 }
 
 .howMuch__cost {
@@ -487,7 +484,6 @@ main {
 
     cursor: pointer;
     transition: .2s;
-
 }
 
 .coin:hover {
@@ -644,6 +640,7 @@ main {
         padding-right: 30%;
     }
 
+
     /* Projects */
     .projects__item {
         grid-template-rows: 110px 70px 1fr;
@@ -652,6 +649,7 @@ main {
     .projects__item > img {
         height: 250px;
     }
+
 
     /* Question */
     .typeSite__blocks {
@@ -675,6 +673,13 @@ main {
         border: var(--border);
         border-bottom: none;
     }
+
+
+    /* How much */
+    .money {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -740,6 +745,7 @@ main {
     .container {
         max-width: 100%;
         padding: 0 50px;
+        margin: 0;
     }
 
 }
@@ -836,20 +842,23 @@ main {
         padding-top: 100px;
     }
 
+    .typeSite > .container {
+        padding: 0;
+    }
+
     .header {
         font-size: 26px;
     }
 
-    .typeSite__title {
-        top: var(--p_container); left: var(--p_container);
-        transform: translate(0, 0);
-    }
-
-    .typeSite__subtitle {
-        opacity: 1;
+    .typeSite .header {
+        margin: 0 var(--p_container);
     }
 
     .typeSite__item {
+        padding: var(--p_container);
+    }
+
+    .typeSite__item:hover {
         padding: var(--p_container);
     }
 
@@ -868,15 +877,34 @@ main {
         border-left: none;
     }
 
-    .question > .container {
-        padding: 0;
+    .typeSite__title {
+        top: var(--p_container); left: var(--p_container);
+        transform: translate(0, 0);
     }
 
-    .header {
-        margin: 0 var(--p_container);
+    .typeSite__item:hover .typeSite__title {
+        top: var(--p_container); left: var(--p_container);
+        transform: translate(0, 0);
     }
 
+    .typeSite__subtitle {
+        opacity: 1;
+    }
 
+    /* How Much */
+    .howMuch__cost {
+        letter-spacing: 5px;
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    /* How Much */
+    .howMuch__cost {
+        letter-spacing: 4px;
+        font-size: 34px;
+    }
 }
 
 

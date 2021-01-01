@@ -1,5 +1,6 @@
 $(function() {
 
+
     coin_1.onclick = function() {
         coin_1.style.opacity="0";
     };
@@ -64,4 +65,3 @@ $(function() {
     });
 
 });
-

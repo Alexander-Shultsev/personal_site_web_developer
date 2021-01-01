@@ -37,10 +37,6 @@ button {
     margin: 0 auto;
 }
 
-.container__typeSite {
-    width: ;
-}
-
 .center {
     display: flex;
     align-items: center;
@@ -786,7 +782,6 @@ main {
 
         font-family: "Montserrat", sans-serif;
         font-size: 50px;
-        letter-spacing: ;
         font-weight: 700;
         color: rgba(0,0,0,.6);
     }
@@ -820,7 +815,9 @@ main {
 @media screen and (max-width: 650px) {
 
     .container {
-        --p_container: 30px;
+        :root {
+            --p_container: 30px;
+        }
 
         max-width: 100%;
         padding: 0 var(--p_container);

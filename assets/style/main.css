@@ -76,14 +76,16 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70%;
+    height: 80%;
 }
 
 .menu__nav > a {
-    transform: rotate(-90deg);
-    font-weight: 400;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-weight: 700;
     font-size: 20px;
-    color: rgba(0,0,0,.5);
+    color: rgba(0,0,0,.3);
+    word-spacing: 5px;
 
     transition: .1s;
 }
@@ -93,7 +95,6 @@ button {
 }
 
 .menu__nav > .active {
-    font-weight: 700;
     color: var(--c_main);
     cursor: default;
 }
@@ -106,12 +107,12 @@ button {
     content: "";
 
     position: absolute;
-    right: 50%; top: 53px;
-    transform: translateX(50%);
+    right: 40px; top: 53%;
+    transform: translate(-50%, -50%);
 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 28px solid var(--c_main);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 28px solid var(--c_main);
 }
 
 

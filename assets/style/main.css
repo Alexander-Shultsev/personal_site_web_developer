@@ -82,9 +82,9 @@ button {
 .menu__nav > a {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
-    color: rgba(0,0,0,.3);
+    color: rgba(0,0,0,.4);
     word-spacing: 5px;
 
     transition: .1s;

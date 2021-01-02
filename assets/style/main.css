@@ -47,6 +47,11 @@ button {
     display: none;
 }
 
+picture {
+    display: flex;
+    justify-content: center;
+}
+
 /* Navidation =============================================*/
 
 .menu {
@@ -815,9 +820,7 @@ main {
 @media screen and (max-width: 650px) {
 
     .container {
-        :root {
-            --p_container: 30px;
-        }
+        --p_container: 30px;
 
         max-width: 100%;
         padding: 0 var(--p_container);

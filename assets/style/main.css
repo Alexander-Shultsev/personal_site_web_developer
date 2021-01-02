@@ -655,7 +655,7 @@ main {
         grid-template-rows: 110px 70px 1fr;
     }
 
-    .projects__item > img {
+    .projects__img {
         height: 250px;
     }
 
@@ -756,7 +756,7 @@ main {
         grid-template-rows: 90px 70px 1fr;
     }
 
-    .projects__item > img {
+    .projects__img {
         height: 330px;
     }
 
@@ -799,7 +799,7 @@ main {
     }
 
     /* Projects */
-    .projects__item > img {
+    .projects__img {
         height: 280px;
     }
 
@@ -897,7 +897,7 @@ main {
         font-size: 20px;
     }
 
-    .projects__item > img {
+    .projects__img {
         height: 250px;
     }
 
@@ -923,7 +923,7 @@ main {
     }
 
     /* Projects */
-    .projects__item > img {
+    .projects__img {
         height: 180px;
     }
 

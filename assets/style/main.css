@@ -204,6 +204,7 @@ main {
 
 .aboutMe__photo {
     width: 100%;
+    height: auto;
 }
 
 

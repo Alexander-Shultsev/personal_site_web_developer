@@ -52,7 +52,9 @@ picture {
     justify-content: center;
 }
 
-/* Navidation =============================================*/
+
+/* Navidation
+=============================================*/
 
 .menu {
     position: fixed;
@@ -64,7 +66,7 @@ picture {
 
 .menu__logo {
     height: var(--w_aside);
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0,0,0,.05);
 
     font-family: 'Audiowide', cursive;
     text-transform: uppercase;
@@ -80,6 +82,9 @@ picture {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
     height: 80%;
 }
 
@@ -95,7 +100,7 @@ picture {
 }
 
 .menu__nav > a:hover {
-    color: rgba(0,0,0,1);
+    color: #000;
 }
 
 .menu__nav > .active {
@@ -120,13 +125,15 @@ picture {
 }
 
 
-/* Main ========================================*/
+/* Main
+=============================================*/
 
 main {
     padding-left: var(--w_aside);
 }
 
-/* About me =====================================*/
+/* About me
+=============================================*/
 
 .aboutMe {
     display: flex;
@@ -151,7 +158,7 @@ main {
     margin-bottom: 30px;
 
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--c_main);
 }
 
@@ -174,20 +181,13 @@ main {
     text-transform: uppercase;
     color: rgba(0,0,0,.3);
     letter-spacing: 6px;
+    font-weight: 400;
 }
 
 .aboutMe__info > p {
     font-size: 20px;
     letter-spacing: 2px;
-}
-
-.photo__section {
-    margin-bottom: 0;
-    width: 60%;
-}
-
-.aboutMe__photo {
-    width: 100%;
+    font-weight: 400;
 }
 
 .aboutMe__status {
@@ -202,9 +202,13 @@ main {
     letter-spacing: 1.5px;
 }
 
+.aboutMe__photo {
+    width: 100%;
+}
 
-/* Projects =====================================*/
 
+/* Projects
+=============================================*/
 
 .projects {
     padding: 100px 0;
@@ -218,9 +222,10 @@ main {
 }
 
 .projects__item {
-    display: inline-grid;
+    display: grid;
     grid-template-rows: 90px 70px 1fr;
     position: relative;
+
     padding: 30px;
 }
 
@@ -238,7 +243,6 @@ main {
 
 .projects__item--yourSite {
     display: flex;
-    position: relative;
 
     background: #FDF8EC;
 }
@@ -248,8 +252,7 @@ main {
 }
 
 .projects__name {
-    position: inherit;
-    margin: 15px 0 70px;
+    margin-top: 15px;
 
     font-size: 24px;
     font-weight: 500;
@@ -259,6 +262,10 @@ main {
 }
 
 .projects__item:hover .projects__name {
+    color: #fff;
+}
+
+.projects__name--9901 {
     color: #fff;
 }
 
@@ -289,12 +296,6 @@ main {
     width: 140px;
     height: 122px;
     background: #E8BA45;
-}
-
-.projects__name--9901 {
-    color: #fff;
-    margin: 0;
-    margin-top: 15px;
 }
 
 .projects__item--yourSite:hover .projects__name {
@@ -371,7 +372,9 @@ main {
     color: var(--c_red);
 }
 
-/* Type Site =====================================*/
+
+/* Type Site
+=============================================*/
 
 .header {
     color: var(--c_main);
@@ -407,11 +410,7 @@ main {
     background: #eee;
 }
 
-.typeSite__item:nth-child(1) {
-    border-right: none;
-}
-
-.typeSite__item:nth-child(2) {
+.typeSite__item:nth-child(-n+2) {
     border-right: none;
 }
 
@@ -451,7 +450,9 @@ main {
     opacity: 1;
 }
 
-/* How much =====================================*/
+
+/* How much
+=============================================*/
 
 .howMuch {
     padding: 200px 0;
@@ -474,11 +475,9 @@ main {
 }
 
 .money {
-    display: flex;
-}
-
-.coin__margin {
-    margin-left: 41px;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 41px;
 }
 
 .coin {
@@ -523,12 +522,13 @@ main {
     transition: .5s;
 }
 
-.coin:hover p {
+.coin:hover > p {
     transform: rotateZ(360deg);
 }
 
 
-/* How send =====================================*/
+/* How send
+=============================================*/
 
 .howSend {
     padding: 200px 0;
@@ -543,7 +543,7 @@ main {
 
 .messenger {
     display: grid;
-    grid-template-columns: 1fr 24% 24%;
+    grid-template-columns: 1fr 25% 25%;
     grid-gap: 40px;
 }
 
@@ -612,6 +612,7 @@ main {
         max-width: 1100px;
     }
 
+    /* About me */
     .aboutMe__Alexander {
         font-size: 50px;
     }
@@ -623,6 +624,7 @@ main {
         max-width: 900px;
     }
 
+    /* About me */
     .aboutMe {
         padding: 100px 0;
         height: auto;
@@ -632,13 +634,8 @@ main {
         flex-direction: column-reverse;
     }
 
-    .aboutMe__Alexander {
-        font-size: 50px;
-    }
-
     .photo__section {
         margin-bottom: 100px;
-        width: 100%;
     }
 
     .aboutMe__photo {
@@ -648,7 +645,6 @@ main {
     .aboutMe__info > p {
         padding-right: 30%;
     }
-
 
     /* Projects */
     .projects__item {
@@ -671,7 +667,7 @@ main {
         opacity: 0;
     }
 
-    /* Question */
+    /* Type site */
     .typeSite__blocks {
         flex-direction: column;
     }
@@ -685,12 +681,7 @@ main {
         width: 100%;
     }
 
-    .typeSite__item:nth-child(1) {
-        border: var(--border);
-        border-bottom: none;
-    }
-
-    .typeSite__item:nth-child(2) {
+    .typeSite__item:nth-child(-n+2) {
         border: var(--border);
         border-bottom: none;
     }
@@ -702,7 +693,6 @@ main {
 
     .typeSite__item:hover .typeSite__title {
         top: 42px; left: 42px;
-        transform: translate(0, 0);
     }
 
     .typeSite__subtitle {
@@ -711,6 +701,10 @@ main {
 
     /* How much */
     .money {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .coin:nth-child(1) {
         display: none;
     }
 
@@ -764,6 +758,16 @@ main {
         height: 500px;
     }
 
+    /* How much */
+    .money {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coin:nth-child(2) {
+        display: none;
+    }
+
+    /* How send */
     .messenger {
         grid-template-columns: 1fr;
         grid-gap: 30px;
@@ -806,6 +810,15 @@ main {
     .projects__item--yourSite {
         height: 450px;
     }
+
+    /* How much */
+    .money {
+        grid-template-columns: 1fr;
+    }
+
+    .coin:nth-child(3) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -830,14 +843,10 @@ main {
         padding: 0 var(--p_container);
     }
 
-
+    /* About me */
     .aboutMe {
         padding: 0;
         padding-bottom: 60px;
-    }
-
-    .aboutMe__Alexander {
-        font-size: 50px;
     }
 
     .aboutMe__webDeveloper > h2 {
@@ -851,7 +860,7 @@ main {
     }
 
     .photo__section {
-        margin: 50px 0;
+        margin: 60px 0;
     }
 
     .projects .container {
@@ -904,10 +913,18 @@ main {
     .projects__name--yourSite::before {
         top: -80%;
     }
+
+    /* How much */
+    .money {
+        grid-template-columns: none;
+    }
+
+    .coin:nth-child(4) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 450px) {
-
 
     .main__title {
         font-size: 40px;
@@ -917,6 +934,7 @@ main {
         padding: 0 var(--p_container);
     }
 
+    /* About me */
     .aboutMe__status {
         font-size: 16px;
         width: 341px;
@@ -937,8 +955,7 @@ main {
         height: 100px;
     }
 
-    /* typeSite */
-
+    /* Type site */
     .typeSite {
         padding-top: 100px;
     }
@@ -1002,7 +1019,7 @@ main {
     }
 
     .howSend__subtitle {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -1047,7 +1064,7 @@ main {
 
     /* How send */
     .howSend__subtitle {
-        font-size: 20px;
+        font-size: 19px;
         margin: 25px 0 50px;
     }
 }

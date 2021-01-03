@@ -1,5 +1,6 @@
 @import "root.css";
 @import "fonts.css";
+@import "../wow_animate/animate.css";
 
 
 * {
@@ -410,8 +411,12 @@ main {
     background: #eee;
 }
 
-.typeSite__item:nth-child(-n+2) {
+.typeSite__item:nth-child(1) {
     border-right: none;
+}
+
+.typeSite__item:nth-child(3) {
+    border-left: none;
 }
 
 .typeSite__title {
@@ -708,9 +713,14 @@ main {
         width: 100%;
     }
 
-    .typeSite__item:nth-child(-n+2) {
-        border: var(--border);
+    .typeSite__item:nth-child(1) {
+        border-right: var(--border);
         border-bottom: none;
+    }
+
+    .typeSite__item:nth-child(3) {
+        border-left: var(--border);
+        border-top: none;
     }
 
     .typeSite__title {
